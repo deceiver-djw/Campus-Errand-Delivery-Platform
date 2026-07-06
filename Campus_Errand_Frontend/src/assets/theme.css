@@ -1,0 +1,131 @@
+/* 校园跑腿 - 浅蓝淡粉配色主题 */
+
+:root {
+  /* ======== 主色：浅蓝 ======== */
+  --blue-50: #e3f2fd;
+  --blue-100: #bbdefb;
+  --blue-200: #90caf9;
+  --blue-300: #64b5f6;
+  --blue-400: #42a5f5;
+  --blue-500: #2196f3;
+  --blue-600: #1e88e5;
+  --blue-700: #1976d2;
+
+  /* ======== 辅色：淡粉 ======== */
+  --pink-50: #fce4ec;
+  --pink-100: #f8bbd0;
+  --pink-200: #f48fb1;
+  --pink-300: #f06292;
+  --pink-400: #ec407a;
+  --pink-500: #e91e63;
+
+  /* ======== 语义变量 ======== */
+  --primary-color: #42a5f5;
+  --primary-light: #90caf9;
+  --primary-lighter: #e3f2fd;
+  --secondary-color: #ec407a;
+  --secondary-light: #f48fb1;
+  --secondary-lighter: #fce4ec;
+
+  /* 背景 */
+  --bg-page: #f0f4f8;
+  --bg-white: #ffffff;
+  --bg-sidebar: #e3f2fd;
+
+  /* 文字 */
+  --text-primary: #1a2a3a;
+  --text-regular: #4a5568;
+  --text-secondary: #8899aa;
+
+  /* 边框 */
+  --border-color: #dce4ec;
+  --border-light: #edf2f7;
+}
+
+/* ======== Element Plus 主题覆盖 ======== */
+/* 侧边栏菜单 */
+.el-menu {
+  --el-menu-bg-color: var(--bg-sidebar);
+  --el-menu-hover-bg-color: var(--blue-100);
+  --el-menu-active-color: var(--blue-700);
+  --el-menu-text-color: var(--text-primary);
+}
+
+/* 按钮 */
+.el-button--primary {
+  --el-button-bg-color: var(--primary-color);
+  --el-button-border-color: var(--primary-color);
+  --el-button-hover-bg-color: var(--blue-600);
+  --el-button-hover-border-color: var(--blue-600);
+  --el-button-active-bg-color: var(--blue-700);
+}
+
+/* Tag / Badge 配色 */
+.el-tag--primary {
+  --el-tag-bg-color: var(--primary-lighter);
+  --el-tag-border-color: var(--primary-light);
+  --el-tag-text-color: var(--blue-700);
+}
+
+/* 顶部导航 */
+.el-header {
+  --el-header-bg-color: var(--bg-white);
+}
+
+/* 卡片 */
+.el-card {
+  --el-card-border-color: var(--border-color);
+}
+
+/* ======== 全局重置 ======== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'PingFang SC', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: var(--text-regular);
+  background: var(--bg-page);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+/* ======== 工具类 ======== */
+.bg-blue-lighter { background: var(--blue-50); }
+.bg-pink-lighter { background: var(--pink-50); }
+.text-primary { color: var(--primary-color); }
+.text-secondary { color: var(--secondary-color); }
+.text-regular { color: var(--text-regular); }
+
+/* ======== 页面通用样式 ======== */
+.page-card {
+  background: var(--bg-white);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+.stat-card {
+  text-align: center;
+  padding: 4px 0;
+}
+
+.stat-label {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+
+.stat-value {
+  font-size: 28px;
+  font-weight: 700;
+}
